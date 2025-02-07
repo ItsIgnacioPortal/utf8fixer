@@ -22,7 +22,7 @@ for arg in argv[2:]:
 
 def convert_file(file_path):
     print("[*]", file_path, "fixed!")
-    foriginal = copen(file_path, "r", "utf8")
+    foriginal = copen(file_path, "r", "utf8", errors='ignore')
     content = foriginal.read()
     foriginal.close()
 
